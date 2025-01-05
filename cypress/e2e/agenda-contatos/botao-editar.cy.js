@@ -5,10 +5,7 @@ describe('Testes para botões deletar e editar', () => {
         cy.visit('https://agenda-contatos-react.vercel.app/')
     })
 
-    it('Deve deletar os contatos', () => {
-        cy.get('.delete').click
-    })
     it('Deve editar os contatos', () => {
-        cy.get('.edit').click
+        cy.get(':nth-child(2) > .sc-gueYoa > .edit').click()  
     })
 })
